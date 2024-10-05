@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+
+    <!-- 
+    -- CUSTOM CSS LINKED
+     -->
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- 
+    -- REMIX ICONS
+     -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.min.css">
+
+    <!-- 
+    -- MAIN JS LINKED
+     -->
+    <script src="./main.js" defer></script>
+
+</head>
+
+<body class="has-bg" style="background-image: url('./calculator-bg.png');">
+
+    <!-- 
+    -- APP
+     -->
+
+    <div class="app">
+
+        <!-- ---- Header ---- -->
+        <header>
+
+            <div class="header-top">
+
+                <h1 class="h1">Calculator</h1>
+
+                <div class="history-icon" data-history-toggler>
+
+                    <div class="icon">
+                        <i class="ri-history-line" aria-hidden="true"></i>
+                    </div>
+
+                    <span class="tool-tip">
+                        History
+                    </span>
+
+                </div>
+
+            </div>
+
+            <div class="header-main">
+
+                <input type="text" autocomplete="off" class="input-field" data-calc-input>
+
+                <input type="text" autocomplete="off" placeholder="0" class="input-field" data-result-input>
+
+            </div>
+
+        </header>
+
+        <!-- ---- Main ---- -->
+        <main>
+
+            <div class="separator"></div>
+
+
+            <div class="keys">
+
+                <button class="btn clear" onclick="clearAll()">C</button>
+                <button class="btn delete" onclick="del()">DE</button>
+                <button class="btn modulus" onclick="calcad('%')">%</button>
+                <button class="btn operator" onclick="calcad('&#247')">&#247</button>
+
+            </div>
+
+
+            <div class="keys">
+
+                <button class="btn" onclick="calcad('7')">7</button>
+                <button class="btn" onclick="calcad('8')">8</button>
+                <button class="btn" onclick="calcad('9')">9</button>
+                <button class="btn operator" onclick="calcad('&#215')">&#215</button>
+
+            </div>
+
+
+            <div class="keys">
+
+                <button class="btn" onclick="calcad('4')">4</button>
+                <button class="btn" onclick="calcad('5')">5</button>
+                <button class="btn" onclick="calcad('6')">6</button>
+                <button class="btn operator" onclick="calcad('+')">+</button>
+
+            </div>
+
+
+            <div class="keys">
+
+                <button class="btn" onclick="calcad('1')">1</button>
+                <button class="btn" onclick="calcad('2')">2</button>
+                <button class="btn" onclick="calcad('3')">3</button>
+                <button class="btn operator" onclick="calcad('-')">-</button>
+
+            </div>
+
+
+            <div class="keys">
+
+                <button class="btn negation" onclick="negation()">+/-</button>
+                <button class="btn" onclick="calcad('0')">0</button>
+                <button class="btn dot" onclick="calcad('.')">.</button>
+                <button class="btn equal" onclick="calculated()">=</button>
+
+            </div>
+
+            <div class="history" data-history>
+
+                <div class="history-list" data-history-list>
+                    <p>There is no history yet.</p>
+                </div>
+
+                <div class="delete-icon" data-history-clearBtn>
+
+                    <i class="ri-delete-bin-5-line" aria-hidden="true"></i>
+
+                </div>
+
+            </div>
+
+        </main>
+
+        <div class="overlay" data-overlay data-history-toggler></div>
+
+    </div>
+
+</body>
+
+</html>
