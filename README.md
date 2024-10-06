@@ -11,4 +11,4 @@ Here are some of the JavaScript projects that I have built.
 
 2. https://mehedihasan-dev.github.io/JavaScript-projects/desserts-cart
 
-<img src="https://github.com/user-attachments/assets/a0c7cf07-5019-4e97-aa5e-b95d1de6408c" style="width:100%;" />
+<img src="https://github.com/user-attachments/assets/a0c7cf07-5019-4e97-aa5e-b95d1de6408c" style="width: 40%; height=100%;" alt="Preview Image 1">
